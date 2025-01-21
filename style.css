@@ -102,4 +102,22 @@ button a {
 .aboutUs_area {
   margin: 6.25rem 0;
 }
+.aboutUs_area img {
+  border-radius: 1rem;
+}
+
+.aboutUs_area .right_side {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutUs_area .right_side h3{
+  font-weight: 500;
+}
+.aboutUs_area .right_side h3 {
+  font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+  text-transform: capitalize;
+}
 /* aboutUs css end  */
