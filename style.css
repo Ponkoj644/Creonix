@@ -8,22 +8,34 @@
 :root {
   --primaryColor: #1c514b;
   --secondaryColor: #fd6b00;
-  --textWhite:#fafafa;
+  --textWhite: #fafafa;
 }
 
 body {
   font-family: "Poppins", serif;
   max-width: 1440px;
   margin: 0 auto;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
 
-button{
+img,
+svg {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
   border: transparent;
   background: transparent;
 }
@@ -34,7 +46,7 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   color: var(--textWhite);
 }
 
@@ -44,11 +56,11 @@ button a {
   background-color: var(--secondaryColor);
   border: 1px solid var(--secondaryColor);
   border-radius: 50px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.btn_primary:hover{
-  scale: .96;
+.btn_primary:hover {
+  scale: 0.96;
   color: var(--textWhite);
 }
 
@@ -69,27 +81,25 @@ button a {
 /* header css end */
 
 /* hero css start */
-.hero_area{
+.hero_area {
   margin: 6.25rem 0;
 }
-
-.hero_area .left_side h1{
-  font-size: 80px;
+.hero_area .left_side h1 {
+  font-size: clamp(2rem, 1.1429rem + 4.2857vw, 5rem);
   font-weight: 500;
 }
-
-.hero_bottom p{
+.hero_bottom p {
   font-size: 20px;
   font-weight: 500;
   text-align: start;
-  margin-bottom: 2rem;
 }
-
-.hero_bottom img{
+.hero_bottom img {
   border-radius: 1rem;
 }
-
-
-
-
 /* hero css end */
+
+/* aboutUs css start  */
+.aboutUs_area {
+  margin: 6.25rem 0;
+}
+/* aboutUs css end  */
