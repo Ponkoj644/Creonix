@@ -9,6 +9,7 @@
   --primaryColor: #1c514b;
   --secondaryColor: #fd6b00;
   --textWhite: #fafafa;
+  --text-gray: #7b7b7b;
 }
 
 body {
@@ -106,6 +107,11 @@ button a {
   border-radius: 1rem;
 }
 
+.aboutUs_area .left_side p {
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
 .aboutUs_area .right_side {
   display: flex;
   gap: 2rem;
@@ -113,11 +119,45 @@ button a {
   justify-content: space-between;
 }
 
-.aboutUs_area .right_side h3{
+.aboutUs_area .right_side h3 {
   font-weight: 500;
 }
 .aboutUs_area .right_side h3 {
   font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
   text-transform: capitalize;
+}
+
+.aboutUs_area .right_side .card .bi {
+  color: var(--secondaryColor);
+}
+.aboutUs_area .right_side .card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.aboutUs_area .right_side .card p {
+  color: #7b7b7b;
+}
+
+.work-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.work-details .card {
+  min-height: 300px;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+}
+
+.work-details > div:nth-child(1) {
+  background-color: var(--primaryColor);
+  color: var(--textWhite);
+}
+
+.work-details .card h4 {
+  font-size: 5rem;
 }
 /* aboutUs css end  */
