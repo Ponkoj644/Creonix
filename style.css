@@ -150,6 +150,9 @@ button a {
   min-height: 300px;
   background-color: #f4f4f4;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .work-details > div:nth-child(1) {
@@ -157,7 +160,55 @@ button a {
   color: var(--textWhite);
 }
 
+.work-details > div:nth-child(1) p {
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #3a6962;
+}
+
 .work-details .card h4 {
-  font-size: 5rem;
+  font-size: clamp(3rem, 2.4286rem + 2.8571vw, 5rem);
+}
+
+.work-details .card p {
+  font-size: 12px;
+  font-weight: 300;
+  background-color: var(--textWhite);
+}
+
+.work-details .card span i {
+  color: var(--secondaryColor);
+  font-size: 1rem;
 }
 /* aboutUs css end  */
+
+/* project css start */
+
+.project_area {
+  margin: 6.25rem 0;
+}
+
+.project_area .heading {
+}
+.project_area .heading p {
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
+.project_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.project_details img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+.project_details .card {
+  width: 100%;
+  min-height: 100px;
+}
+/* project css end */
