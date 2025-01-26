@@ -219,3 +219,37 @@ button a {
 }
 
 /* project css end */
+
+/* service css start */
+.service_area {
+  margin: 6.25rem 0;
+  border-radius: 1rem;
+  background-color: var(--primaryColor);
+}
+
+.service_area .heading {
+  color: var(--textWhite);
+  width: 85%;
+}
+
+.service_area .heading p {
+  color: var(--secondaryColor);
+  background-color: rgb(58, 105, 98);
+}
+
+.service_area .heading h3 {
+  font-size: clamp(1.3rem, 1.1857rem + 0.5714vw, 1.7rem);
+}
+
+.service_area .card {
+  background-color: var(--primaryColor);
+  color: var(--textWhite);
+  background-color: rgb(58, 105, 98);
+  cursor: pointer;
+}
+
+.service_area .card i {
+  font-size: 1.5rem;
+}
+
+/* service css end */
