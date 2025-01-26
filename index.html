@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="header_area d-none">
+    <header class="header_area">
       <nav class="navbar navbar-expand-lg my_navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Creonix</a>
@@ -69,7 +69,7 @@
     <!-- main start  -->
     <main>
       <!-- hero area start -->
-      <section class="hero_area d-none">
+      <section class="hero_area">
         <div class="container-fluid">
           <div
             class="row align-items-start justify-content-between gap-5 gap-lg-0 gap-md-3 gap-lg-0"
@@ -123,7 +123,7 @@
       <!-- hero area end -->
 
       <!-- about us area start -->
-      <section class="aboutUs_area d-none">
+      <section class="aboutUs_area">
         <div class="container-fluid">
           <div class="row justify-content-between">
             <div class="col-lg-5 left_side">
@@ -351,14 +351,45 @@
             </div>
           </div>
           <!-- service cards -->
-          <div class="row pb-5">
+          <div class="row row-cols-sm-2 row-cols-lg-4 g-3 g-lg-3 pb-5">
+            <!-- blank card -->
+            <div class="d-none d-lg-block"></div>
+            <!-- card 1  -->
             <div class="col-lg-3 col-md-4 col-12">
-              <div class="card p-3 d-flex flex-column gap-2 border-0 px-4">
+              <div
+                class="card d-flex flex-column align-items-start justify-content-center gap-2 border-0 px-4"
+              >
                 <i class="bi bi-globe"></i>
                 <h4>Web design</h4>
                 <p>
                   Transform your web design vision into captivating visuals that
                   inspire your audience.
+                </p>
+              </div>
+            </div>
+            <!-- card 2  -->
+            <div class="col-lg-3 col-md-4 col-12">
+              <div
+                class="card d-flex flex-column align-items-start justify-content-center gap-2 border-0 px-4"
+              >
+                <i class="bi bi-app-indicator"></i>
+                <h4>App Design</h4>
+                <p>
+                  Create innovative and user- friendly mobile applications that
+                  elevate your user experience.
+                </p>
+              </div>
+            </div>
+            <!-- card -3  -->
+            <div class="col-lg-3 col-md-4 col-12">
+              <div
+                class="card d-flex flex-column align-items-start justify-content-center gap-2 border-0 px-4"
+              >
+                <i class="bi bi-microsoft"></i>
+                <h4>Branding</h4>
+                <p>
+                  Drive growth with Branding strategies that connect your brand
+                  to right audience.
                 </p>
               </div>
             </div>

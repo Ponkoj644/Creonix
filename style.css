@@ -229,7 +229,7 @@ button a {
 
 .service_area .heading {
   color: var(--textWhite);
-  width: 85%;
+  width: 90%;
 }
 
 .service_area .heading p {
@@ -238,7 +238,9 @@ button a {
 }
 
 .service_area .heading h3 {
-  font-size: clamp(1.3rem, 1.1857rem + 0.5714vw, 1.7rem);
+  /* font-size: clamp(1.3rem, 1.1857rem + 0.5714vw, 1.7rem); */
+  /* font-size: clamp(2rem, 1.4286rem + 2.8571vw, 4rem); */
+  font-size: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
 }
 
 .service_area .card {
@@ -246,10 +248,25 @@ button a {
   color: var(--textWhite);
   background-color: rgb(58, 105, 98);
   cursor: pointer;
+  min-height: 230px;
+  max-height: 300px;
+  /* text-align: center; */
 }
 
 .service_area .card i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--secondaryColor);
+}
+
+.service_area .card h4{
+  font-weight: 400;
+
+}
+
+.service_area .card p{
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /* service css end */

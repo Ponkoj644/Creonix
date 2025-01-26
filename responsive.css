@@ -11,6 +11,10 @@
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .service_area .heading {
+    color: var(--textWhite);
+    width: inherit;
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
