@@ -301,12 +301,10 @@ button a {
 .faq_area {
   margin: 6.25rem 0;
 }
-
 .faq_area .heading p {
   color: var(--secondaryColor);
   font-weight: 600;
 }
-
 .faq_area .accordion .accordion-item .accordion-button {
   color: var(--secondaryColor);
   font-weight: 600;
@@ -314,19 +312,79 @@ button a {
   background-color: var(--primaryColor);
   /* letter-spacing: normal; */
 }
-
 .faq_area .accordion .accordion-item .accordion-button::after {
   background-image: url("./images/arrow-down-circle.svg");
 }
-
 .faq_area .accordion .accordion-item .accordion-button:not(.collapsed)::after {
   background-image: url("./images/arrow-down-circle.svg");
   transform: rotate(-180deg);
 }
-
 .faq_area .accordion .accordion-item {
   border-top: 0;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
+}
+/* FAQ section end */
+
+/* Footer css start */
+.footer_area {
+  padding: 1rem;
+  background-color: var(--primaryColor);
+  color: var(--textWhite);
+  margin-bottom: 2rem;
 }
 
-/* FAQ section end */
+.footer_area .left_side,
+.footer_area .middle_side,
+.footer_area .right_side {
+  min-height: 200px;
+  display: flex;
+  /* align-items: flex-end; */
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer_area .left_side .social {
+  display: flex;
+  gap: 1rem;
+}
+.footer_area .left_side a {
+  text-decoration: none;
+  color: var(--textWhite);
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.footer_area .left_side h3 {
+  font-size: 3rem;
+}
+
+.footer_area .footer_nav {
+  margin-top: 4rem;
+}
+.footer_area .footer_nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+.footer_area .footer_nav ul li {
+  list-style: none;
+}
+.footer_area .footer_nav ul li a {
+  text-decoration: none;
+  color: var(--textWhite);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer_area .footer_nav ul li a:hover {
+  color: var(--secondaryColor);
+}
+
+.footer_area hr {
+  display: block;
+  color: #fd6b00;
+  opacity: 1;
+  margin: 1rem 0;
+}
+
+/* Footer css end */
