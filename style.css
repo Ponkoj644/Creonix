@@ -296,3 +296,14 @@ button a {
   height: 50px;
 }
 /* Client review css end */
+
+/* FAQ section start */
+.faq_area{
+  margin: 6.25rem 0;
+}
+
+.faq_area .heading p{
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+/* FAQ section end */
