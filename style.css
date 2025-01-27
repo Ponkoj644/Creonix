@@ -256,10 +256,10 @@ button a {
   font-size: 1.3rem;
   color: var(--secondaryColor);
 }
-.service_area .card h4{
+.service_area .card h4 {
   font-weight: 400;
 }
-.service_area .card p{
+.service_area .card p {
   color: white;
   font-weight: 300;
   font-size: 14px;
@@ -267,17 +267,17 @@ button a {
 /* service css end */
 
 /* Client review css start */
-.client_reviews{
+.client_reviews {
   margin: 6.25rem 0;
   background-color: #f4f4f4;
 }
 
-.client_reviews .heading p{
+.client_reviews .heading p {
   color: var(--secondaryColor);
   font-weight: 600;
 }
 
-.client_reviews .review_card{
+.client_reviews .review_card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -287,23 +287,46 @@ button a {
   border-radius: 1rem;
 }
 
-.client_reviews .review_card h3{
+.client_reviews .review_card h3 {
   font-size: 1.2rem;
 }
 
-.client_reviews .review_card img{
+.client_reviews .review_card img {
   width: 50px;
   height: 50px;
 }
 /* Client review css end */
 
 /* FAQ section start */
-.faq_area{
+.faq_area {
   margin: 6.25rem 0;
 }
 
-.faq_area .heading p{
+.faq_area .heading p {
   color: var(--secondaryColor);
   font-weight: 600;
 }
+
+.faq_area .accordion .accordion-item .accordion-button {
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: var(--primaryColor);
+  /* letter-spacing: normal; */
+}
+
+.faq_area .accordion .accordion-item .accordion-button::after {
+  background-image: url("./images/arrow-down-circle.svg");
+}
+
+.faq_area .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url("./images/arrow-down-circle.svg");
+  transform: rotate(-180deg);
+}
+
+.faq_area .accordion .accordion-item {
+  border-top: 0;
+  margin-bottom: .2rem;
+}
+
 /* FAQ section end */
