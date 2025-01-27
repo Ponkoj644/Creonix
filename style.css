@@ -252,21 +252,47 @@ button a {
   max-height: 300px;
   /* text-align: center; */
 }
-
 .service_area .card i {
   font-size: 1.3rem;
   color: var(--secondaryColor);
 }
-
 .service_area .card h4{
   font-weight: 400;
-
 }
-
 .service_area .card p{
   color: white;
   font-weight: 300;
   font-size: 14px;
 }
-
 /* service css end */
+
+/* Client review css start */
+.client_reviews{
+  margin: 6.25rem 0;
+  background-color: #f4f4f4;
+}
+
+.client_reviews .heading p{
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+.client_reviews .review_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 1.5rem;
+  background-color: var(--textWhite);
+  border-radius: 1rem;
+}
+
+.client_reviews .review_card h3{
+  font-size: 1.2rem;
+}
+
+.client_reviews .review_card img{
+  width: 50px;
+  height: 50px;
+}
+/* Client review css end */
