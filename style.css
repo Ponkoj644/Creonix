@@ -12,11 +12,66 @@
   --text-gray: #7b7b7b;
 }
 
+/* Cstom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3a6962;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryColor);
+  border-radius: 1rem;
+}
+
+/* Preloader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: lightgray;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.loader h3 {
+  font-size: 2rem;
+  color: var(--secondaryColor);
+}
+
+.disppear {
+  animation: close 3s forwards;
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 body {
   font-family: "Poppins", serif;
   max-width: 1440px;
   margin: 0 auto;
   transition: all 0.2s ease-in-out;
+  height: 100vh;
+  position: relative;
 }
 
 h1,

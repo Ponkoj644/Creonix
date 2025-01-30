@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="loader">
+      <img src="./images/load-gif.gif" alt="Preloader" class="w-25" />
+      <h3>Loading...</h3>
+    </div>
     <!-- header start -->
     <header class="header_area">
       <nav class="navbar navbar-expand-lg my_navbar">
@@ -944,5 +949,14 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!-- loader script -->
+    <script>
+      var loader = document.querySelector(".loader");
+      window.addEventListener("load", close);
+      function close() {
+        loader.classList.add("disppear");
+      }
+    </script>
   </body>
 </html>
