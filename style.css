@@ -66,19 +66,35 @@ button a {
 }
 
 /* header css start */
+
+.header_area .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+.header_area .navbar-brand span {
+  color: var(--secondaryColor);
+  font-size: 2rem;
+  font-weight: 600;
+}
 .my_navbar {
   padding: 1rem 0;
-  /* background-color: red; */
 }
-/* .my_navbar button a {
-  text-decoration: none;
+
+.my_navbar .nav-link {
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  color: var(--textWhite);
-} */
+  transition: all 0.2s ease-in-out;
+}
+
+.my_navbar .nav-link:hover {
+  color: var(--secondaryColor);
+}
+
+.my_navbar .nav-link.active {
+  color: var(--secondaryColor);
+}
+
 /* header css end */
 
 /* hero css start */
@@ -266,6 +282,45 @@ button a {
 }
 /* service css end */
 
+/* blog css start */
+.blog_area {
+  margin: 6.25rem 0;
+}
+
+.blog_area .heading P {
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+.blog_area .card {
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0.3rem;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+.blog_area .card-img img {
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+  object-fit: cover;
+  margin-bottom: 0.3rem;
+  object-fit: cover;
+  min-height: 250px;
+}
+
+.blog_area .card:hover .card-img img {
+  scale: 1.01;
+}
+
+.blog_area .card-text {
+}
+
+.blog_area .card-text h4 {
+  font-size: 1.2rem;
+}
+/* blog css end */
+
 /* Client review css start */
 .client_reviews {
   margin: 6.25rem 0;
@@ -336,26 +391,33 @@ button a {
 .footer_area .left_side,
 .footer_area .middle_side,
 .footer_area .right_side {
-  min-height: 200px;
+  min-height: 100px;
   display: flex;
-  /* align-items: flex-end; */
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer_area .left_side .social {
   display: flex;
   gap: 1rem;
 }
+
+.footer_area .left_side .social a {
+}
 .footer_area .left_side a {
   text-decoration: none;
   color: var(--textWhite);
   font-size: 1.5rem;
   gap: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer_area .left_side a:hover {
+  color: var(--secondaryColor);
 }
 
 .footer_area .left_side h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .footer_area .footer_nav {
@@ -364,8 +426,6 @@ button a {
 .footer_area .footer_nav ul {
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 1rem;
 }
 .footer_area .footer_nav ul li {
   list-style: none;
@@ -375,9 +435,12 @@ button a {
   color: var(--textWhite);
   transition: all 0.2s ease-in-out;
 }
-
 .footer_area .footer_nav ul li a:hover {
   color: var(--secondaryColor);
+}
+
+.footer_area .copyright {
+  font-size: 0.8rem;
 }
 
 .footer_area hr {

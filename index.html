@@ -24,7 +24,7 @@
     <header class="header_area">
       <nav class="navbar navbar-expand-lg my_navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Creonix</a>
+          <a class="navbar-brand" href="#"> <span>C</span>reonix</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -398,6 +398,89 @@
       </section>
       <!-- Service area end -->
 
+      <!-- Blog area start  -->
+      <section class="blog_area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="heading">
+              <p class="border d-inline p-2 rounded-1">Our Blogs</p>
+              <h3 class="mt-4">Latest Articles</h3>
+            </div>
+          </div>
+
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-3 mt-lg-5"
+          >
+            <!-- card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./images/Blog_img_1.jpg"
+                    alt="Blog"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-text d-flex flex-column gap-3 p-2">
+                  <h4 class="fw-semibold">
+                    The Ultimate Guide to User-Centric Web Design
+                  </h4>
+                  <div class="d-flex gap-2 mb-2">
+                    <p>Web Design</p>
+                    <p>Nov 20, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./images/Blog_img_2.jpg"
+                    alt="Blog"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-text d-flex flex-column gap-3 p-2">
+                  <h4 class="fw-semibold">
+                    Creating User-Friendly Apps: Best Practices for Designers
+                  </h4>
+                  <div class="d-flex gap-2 mb-2">
+                    <p>App Design</p>
+                    <p>Nov 20, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./images/Blog_img_3.jpg"
+                    alt="Blog"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-text d-flex flex-column gap-3 p-2">
+                  <h4 class="fw-semibold">
+                    Creating User-Friendly Apps: Best Practices for Designers
+                  </h4>
+                  <div class="d-flex gap-2 mb-2">
+                    <p>App Design</p>
+                    <p>Nov 20, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog area end  -->
+
       <!-- client review area start -->
       <section class="client_reviews">
         <div class="container-fluid">
@@ -601,7 +684,7 @@
               <p class="mb-4">
                 We address some of the most common questions about our services
               </p>
-              <img src="./images/Hero_img.jpg" alt="FAQ" class="rounded-4" />
+              <img src="./images/Faq_img.jpg" alt="FAQ" class="rounded-4" />
             </div>
             <div class="col-lg-8 mt-lg-0 mt-4">
               <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -761,37 +844,47 @@
     <footer>
       <section class="footer_area">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 left_side">
-              <h3>Creonix</h3>
-              <div class="social">
-                <a href="">
-                  <i class="bi bi-twitter"></i>
-                </a>
-                <a href="">
-                  <i class="bi bi-facebook"></i>
-                </a>
-                <a href="">
-                  <i class="bi bi-instagram"></i>
-                </a>
-                <a href="">
-                  <i class="bi bi-linkedin"></i>
-                </a>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-6">
+              <div class="left_side">
+                <h3 class="mb-2 mb-lg-0">Creonix</h3>
+                <div class="social">
+                  <a href="">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="col-lg-3 middle_side">
-              <p>Drop usage & outlaw respond hours to assist your</p>
-              <h3>Info@creonix.com</h3>
+            <div class="col-lg-3">
+              <div class="middle_side">
+                <p class="mb-2 mb-lg-0">
+                  Drop usage & outlaw respond hours to assist your
+                </p>
+                <h3>Info@creonix.com</h3>
+              </div>
             </div>
-            <div class="col-lg-3 right_side">
-              <p>Give us a cal</p>
-              <h3>+(498) 565 0120</h3>
+
+            <div class="col-lg-3">
+              <div class="right_side">
+                <p class="mb-2 mb-lg-0">Give us a cal</p>
+                <h3>+(498) 565 0120</h3>
+              </div>
             </div>
           </div>
 
+          <!-- Footer Nav -->
           <div class="footer_nav">
-            <ul>
+            <ul class="d-flex flex-wrap gap-3">
               <li>
                 <a href="">Home</a>
               </li>
@@ -820,11 +913,12 @@
           </div>
           <hr />
 
+          <!-- copyright -->
           <div
-            class="copyright d-flex align-items-center justify-content-between"
+            class="copyright d-md-flex align-items-center justify-content-between"
           >
             <p>Copyright 2005 Con All rights reserved</p>
-            <div>
+            <div class="mt-2 mt-md-0">
               <ul class="d-flex m-0 p-0 gap-3">
                 <li class="list-unstyled">
                   <a href="" class="text-decoration-none text-white"
